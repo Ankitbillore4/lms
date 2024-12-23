@@ -6,6 +6,7 @@ import { Categories } from "@/components/sections/categories"
 import { Testimonials } from "@/components/sections/testimonials"
 import { Courses } from "@/components/sections/courses"
 import { Instructors } from "@/components/sections/instructors"
+import Start from "@/components/sections/start"
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <Courses />
         <Instructors />
         <Testimonials />
+        <Start/>
       </main>
       <Footer />
     </div>
