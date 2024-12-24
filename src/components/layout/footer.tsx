@@ -1,28 +1,13 @@
 import Link from "next/link"
 import { Facebook, Github, Mail, MapPin, Phone, Twitter, ComputerIcon as Windows } from 'lucide-react'
-
+import Image from "next/image"
 export function Footer() {
   return (
     <footer className="border-t bg-slate-950 text-slate-50">
       <div className="container grid gap-8 py-12 md:grid-cols-2 lg:grid-cols-4">
         <div>
           <Link href="/" className="flex items-center gap-2 font-semibold">
-            <div className="text-orange-500">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
-              </svg>
-            </div>
-            SKILLSMEDIA
+            <Image src="/images/namelogo.png" alt="Logo" width={150} height={50} />
           </Link>
           <p className="mt-4 text-slate-400">
             Empowering learners through accessible and engaging online education.
@@ -83,17 +68,20 @@ export function Footer() {
             </li>
           </ul>
           <div className="mt-6 flex gap-4">
-            <Link href="#" className="rounded-full bg-slate-800 p-2 hover:bg-slate-700">
-              <Facebook className="h-5 w-5" />
+            <Link href="#" className="rounded-full bg-white p-2 hover:bg-slate-700">
+              <Image src='/images/facebook.png' alt="facebook" width={20} height={20}></Image>
             </Link>
-            <Link href="#" className="rounded-full bg-slate-800 p-2 hover:bg-slate-700">
-              <Github className="h-5 w-5" />
+            <Link href="#" className="rounded-full bg-white p-2 hover:bg-slate-700">
+              <Image src='/images/github.png' alt="github" width={20} height={20}></Image>
             </Link>
-            <Link href="#" className="rounded-full bg-slate-800 p-2 hover:bg-slate-700">
-              <Twitter className="h-5 w-5" />
+            <Link href="#" className="rounded-full bg-white p-2 hover:bg-slate-700">
+              <Image src='/images/google.png' alt="google" width={20} height={20}></Image>
             </Link>
-            <Link href="#" className="rounded-full bg-slate-800 p-2 hover:bg-slate-700">
-              <Windows className="h-5 w-5" />
+            <Link href="#" className="rounded-full bg-white p-2 hover:bg-slate-700">
+              <Image src='/images/twitter.png' alt="twitter" width={20} height={20}></Image>
+            </Link>
+            <Link href="#" className="rounded-full bg-white p-2 hover:bg-slate-700">
+              <Image src='/images/microsoft.png' alt="microsoft" width={20} height={20}></Image>
             </Link>
           </div>
         </div>
